@@ -9,7 +9,7 @@ long long int i;
     if (k > n) return 0;//pas de solution dans ce cas car C(n,k)=0
 
 
-     // Optimisation : utiliser la propriété C(n, k) = C(n, n-k)
+     // Optimisation : utiliser la propriÃ©tÃ© C(n, k) = C(n, n-k)
     if (k > n - k) {
     	 printf("k = n - k");
 	}
