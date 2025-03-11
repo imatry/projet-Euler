@@ -15,7 +15,7 @@ long long crible_eratosthene(long int N) {
     }
     
     
-    // Crible d'Ératosthène pour eliminer les multiples des nombres premiers
+    // Crible d'Ã‰ratosthÃ¨ne pour eliminer les multiples des nombres premiers
      for (i = 2; i*i <= N; i++) {
         if (est_premier[i]) {
             for (j = i*i; j <= N; j+= i) {
@@ -33,7 +33,7 @@ long long crible_eratosthene(long int N) {
     }
 
 
-   // Libérer la mémoire allouée
+   // LibÃ©rer la mÃ©moire allouÃ©e
     free(est_premier);
     return S;
 }
@@ -42,11 +42,11 @@ int main() {
     long int N;
     long long S;
     
-    printf("Definisser la limite à atteindre : ");
+    printf("Definisser la limite Ã  atteindre : ");
     scanf("%ld", &N);
 
 
- // Appeler la fonction crible d'Ératosthène pour calculer la somme des premiers
+ // Appeler la fonction crible d'Ã‰ratosthÃ¨ne pour calculer la somme des premiers
     S = crible_eratosthene(N);
 
     printf("\nLa somme des nombres premiers sous la limite %ld est %lld\n", N, S);
