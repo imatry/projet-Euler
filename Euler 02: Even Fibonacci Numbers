@@ -5,7 +5,7 @@ int main() {
 	int   N, i, f1 = 0, f2 = 1, fib, S= 0;
  
  
-//nombre de termes à afficher
+//nombre de termes Ã  afficher
     printf("Combien de termes de la suite de Fibonacci voulez-vous afficher ? ");
     scanf("%d", &N);
 
@@ -17,17 +17,17 @@ int main() {
         printf("%d ", f2); //1 est le second terme de la suite de fibonacci et lui aussi est fixe
     }
 
-//après avoir afficher les deux premiers termes de la suite de Fibonacci je vais afficher les autres termes 
+//aprÃ¨s avoir afficher les deux premiers termes de la suite de Fibonacci je vais afficher les autres termes 
     for ( i = 3; i <= N; i++) {
         fib = f1 + f2; // chaque nouveau terme est issu de la somme des deux precedents
         printf("%d ", fib); // afficher le nouveau terme 
         
-//    Ensuite mettre à jour les anciens termes
+//    Ensuite mettre Ã  jour les anciens termes
         f1 = f2;
         f2 = fib;
     }
 
-    printf("\n");// passage à la ligne
+    printf("\n");// passage Ã  la ligne
 
     printf("Les nombres pairs de la suite de Fibonacci :\n");//ce message apparait pour lister les nombres paires
     
