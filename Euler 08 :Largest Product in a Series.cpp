@@ -28,7 +28,7 @@ int main() {
     
     for(i = 0; i < strlen(nbres) - 13; i++) {
         long long prod=1;
-        printf("Séquence de 13 chiffres : ");
+        printf("SÃ©quence de 13 chiffres : ");
         
         for(j = i; j < i + 13; j++) {
             printf("%c", nbres[j]);
