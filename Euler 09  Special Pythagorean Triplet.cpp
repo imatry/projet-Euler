@@ -6,7 +6,7 @@ int main() {
     int a,b,c,produit;
    
     for(a=1; a<1000; a++){
-    	for(b=a+1; b<1000; b++){ // b est sup à a selon la relation (*)
+    	for(b=a+1; b<1000; b++){ // b est sup Ã  a selon la relation (*)
     	  c=1000-a-b;
              if(a*a+b*b==c*c){
 		       printf(" a =%d, b=%d, c=%d\n",a,b,c);
